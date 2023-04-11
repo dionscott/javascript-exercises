@@ -4,6 +4,10 @@ const sumAll = function(num1, num2) {
     let low;
     let high;
 
+    //check if the number is negative and returns error if true
+    if (num1 < 0 || num2 < 0) {
+        return "ERROR"
+    }
     //find the lowest number
     if (num1 < num2) {
         low = num1;
