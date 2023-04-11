@@ -3,19 +3,19 @@ const convertToCelsius = function(fahr) {
   fahrenheit = (fahr - 32) * (5/9);
   //checks if this is a whole number
   if (fahrenheit === Math.floor(fahrenheit)) {
-    return fahrenheit
+    return fahrenheit;
   }
-  return fahrenheit.toFixed(1);
+  return Number(fahrenheit.toFixed(1));
 };
 
 const convertToFahrenheit = function(cels) {
   let celsius = 0;
-  celsius = ((cels - 32) * (5/9));
+  celsius = (cels * (9/5)) + 32;
   //checks if this is a whole number
   if (celsius === Math.floor(celsius)) {
-    return fahrenheit
+    return celsius;
   }
-  return celsius.toFixed(1);
+  return Number(celsius.toFixed(1));
 };
 
 // Do not edit below this line
