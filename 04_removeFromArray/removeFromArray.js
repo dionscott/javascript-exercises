@@ -1,24 +1,22 @@
 const removeFromArray = function(array, num1, num2) {
     //assign argument to look for
-    //use indexof to go through the array
+    
     function removeItem(item) {
+        //use indexof to go through the array
         if (array.indexOf(item)) {
+            //if found remove item and return array
             let index = array.indexOf(item);
             array.splice(index, 1);
         }
     }
     
-    removeItem(num1)
-    // if (num2 != undefined) {
-
-    // }
-    return array;
-    //loop through array to find the argument
-    
-
-    //if found remove item and return array
+    removeItem(num1);
+    if (num2 != undefined) {
+        removeItem(num2)
+    }
 
     //if not, return original array
+    return array;
 
 };
 
