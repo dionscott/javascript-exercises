@@ -16,12 +16,9 @@ const leapYears = function(year) {
             //return true if the year is divisible by 4 and not 100
             return true
         }
-        //return false if the year is not divisible by 4
-        return false
     } 
-    
-    
-
+    //return false if the year is not divisible by 4
+    return false;
 };
 
 // Do not edit below this line
