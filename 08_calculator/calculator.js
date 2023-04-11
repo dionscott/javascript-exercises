@@ -19,9 +19,23 @@ const sum = function(array) {
 };
 
 const multiply = function(array) {
-  let sum = 0;
   //takes an array and multiplies them by each other
+  let sum = 0;
+  let length = array.length
 
+  //multiply first two in array
+  let first = array[0];
+  let second = array[1];
+  sum = first * second;
+  //if the array is longer iterate and multiply
+  if (length > 2) {
+    for (let i = 2; i < length; i++) {
+      sum *= array[i];
+    }
+  }
+
+  //return sum
+  return sum;
 };
 
 const power = function() {
