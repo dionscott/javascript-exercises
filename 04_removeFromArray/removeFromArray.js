@@ -3,7 +3,7 @@ const removeFromArray = function(array, num1, num2) {
     
     function removeItem(item) {
         //use indexof to go through the array
-        if (array.indexOf(item)) {
+        if (array.indexOf(item) != -1) {
             //if found remove item and return array
             let index = array.indexOf(item);
             array.splice(index, 1);
