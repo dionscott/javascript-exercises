@@ -38,8 +38,9 @@ const multiply = function(array) {
   return sum;
 };
 
-const power = function() {
-	
+const power = function(number, power) {
+  let answer = number ** power;
+  return answer
 };
 
 const factorial = function() {
