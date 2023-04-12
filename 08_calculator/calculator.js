@@ -43,8 +43,17 @@ const power = function(number, power) {
   return answer
 };
 
-const factorial = function() {
-	
+const factorial = function(fact) {
+  let sum = 1;
+	if ((fact == 0) || (fact == 1)) {
+    return sum;
+  }
+  //iterate through each number until 1
+  for (let i = fact; i > 1; i--) {
+    //multiply them together
+    sum *= i;
+  }
+  return sum;
 };
 
 // Do not edit below this line
