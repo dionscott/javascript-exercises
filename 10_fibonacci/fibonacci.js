@@ -2,6 +2,11 @@ const fibonacci = function(number) {
     //fibonacci array starts as [1,2]
     let fib = [1,1];
     let index = number - 1;
+
+    //checks if the argument is negative
+    if (number < 0) {
+        return "OOPS"
+    }
     //check the index of the array
     if (fib[index]) {
         return fib[index];
